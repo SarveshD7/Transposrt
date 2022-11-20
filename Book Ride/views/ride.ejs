@@ -1,0 +1,33 @@
+
+  <form action="/" method="post" class="item">
+    <div class = "source" >
+    <label for="source">Select Source</label>
+    <select name="source" id="source" >
+        <% for(var i=0;i<sourceArray.length;i++ ) { %>
+        <option value=String(<%=sourceArray[i]%>)><%=sourceArray[i]%></option>
+        <%   }   %>
+    </select>
+</div>
+<div class = "destination">
+    <label for="destination">Select Destination</label>
+    <select name="destination" id="destination">
+        <% for(var i=0;i<destinationArray.length;i++ ) { %>
+        <option value=String(<%=destinationArray[i]%>)><%=destinationArray[i]%></option>
+        <%   }   %>
+    </select>
+</div>
+<div class = "vehicle">
+    <label for="vehicle">Select Vehicle</label>
+    <select name="vehicle" id="vehicle">
+        <% for(var i=0;i<vehicleArray.length;i++ ) { %>
+        <option value=String(<%=vehicleArray[i]%>)><%=vehicleArray[i]%></option>
+        <%   }   %>
+    </select>
+</div>
+<div class = "submitButton">
+    <button type="submit" name="button">Book Ride</button>
+</div>
+   
+</form>
+   </div>
+
